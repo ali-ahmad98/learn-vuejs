@@ -1,9 +1,13 @@
-<script setup></script>
+<script setup>
+import JobsListing from "../JobsListing/JobsListing.vue";
+import Hero from "./partials/Hero.vue";
+import HomeCards from "./partials/HomeCards.vue";
+</script>
 
 <template>
-  <div>
-    <h1 class="text-2xl">Home</h1>
-  </div>
+  <Hero />
+  <HomeCards />
+  <JobsListing :limit="3" showButton />
 </template>
 
 <style scoped></style>
